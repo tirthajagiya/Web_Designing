@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style type="text/css">
+        /* Gloabal variable */
+        :root{
+            --theamColor1 : red;
+            --theamColor2 :green;
+        }
+
+        div{
+            background-color:var(--theamColor1);
+            color: var(--theamColor2);
+        }
+
+        p{
+            background-color:var(--theamColor2);
+            color: var(--theamColor1);
+        }
+
+        /* Local Variable
+        p{
+            --theamColor1 : red;
+            --theamColor2 :green;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        Darshan University
+    </div>
+
+    <p>
+        Darshan University
+    </p>
+</body>
+</html>
